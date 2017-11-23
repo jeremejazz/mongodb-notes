@@ -2,9 +2,13 @@
 
 In order to start we will first have to install MongoDB. Good thing is that there are available instructions online for installation on their website \([http://mongodb.org](http://mongodb.org)\).
 
-Programming tools such as Python and Jupyter notebook is also needed. Perhaps the easiest way to install all of these is by downloading Anaconda \([https://www.anaconda.com/downloads](https://www.anaconda.com/downloads)\). 
+Programming tools such as Python and Jupyter notebook is also needed. Perhaps the easiest way to install all of these is by downloading Anaconda \([https://www.anaconda.com/downloads](https://www.anaconda.com/downloads)\).
 
 
+
+## Directory Structure
+
+TBA
 
 ## MongoDB Atlas
 
