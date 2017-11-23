@@ -1,0 +1,12 @@
+# Setting up the environment
+
+In order to start we will first have to install MongoDB. Good thing is that there are available instructions online for installation on their website \([http://mongodb.org](http://mongodb.org)\). 
+
+
+
+## MongoDB Atlas
+
+MongoDB atlas lets you run MongoDB on the cloud. There is a free instance is available and it is also required to create a free cluster. 
+
+
+
