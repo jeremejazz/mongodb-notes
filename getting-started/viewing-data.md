@@ -1,6 +1,6 @@
 # Viewing data from your Local Machine
 
-Perhaps the best tool used in order to view our database in the cloud is by using MongoDB Compass. This free tool can be Downloaded here \([https://www.mongodb.com/products/compass\](https://www.mongodb.com/products/compass\)\)
+Perhaps the best tool used in order to view our database in the cloud is by using MongoDB Compass. This free tool can be Downloaded here \([https://www.mongodb.com/products/compass\](https://www.mongodb.com/products/compass%29\)
 
 ## Connecting via Robo3T
 
@@ -15,4 +15,22 @@ Here are the steps made:
 5. Choose Save then Connect. If an error occurs that says about establishing connection try another URL from the seed list.  
 
 Keep in mind that the first address in the seed list \(usually has a shard-00-00-.. \) pertains to the Primary node, that allows read/write access. While the other are like alternative link but only give Read access. Unlike compass you can only put one node for now.
+
+## Analyzing the Connection String
+
+A sample connection string provided by MongoDB docs:
+
+`mongodb://kay:myRealPassword@mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017/admin?ssl=true&replicaSet=Mycluster0-shard-0&authSource=admin`
+
+Here the **kay** is the username as **myRealPassword** is the password created when instantiating the cluster. These credentials can also be changed under the security tab of the cluster in the dashboard.
+
+The addresses
+
+mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mongodb.net:27017,mycluster0-shard-00-02-wpeiv.mongodb.net:27017
+
+pertain to the seed list. To note, the are multiple addresses separated by commas. This to ensure that when the **primary** \(which is the first\) fails, the driver will automatically use the other cluster addresses. It can be considered as a replicated alternate database synced in the background. When transacting with Robo3T \(as mentioned above\), the addresses other than the primary only allow read only access.
+
+After the seed list is `/admin` This is the name of the current database which is set to admin. This can be changed when using a different database. Other important information is `Mycluster0-shard-0` which as mentioned earlier, pertains to the name of the cluster.
+
+
 
