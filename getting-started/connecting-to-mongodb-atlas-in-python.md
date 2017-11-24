@@ -1,5 +1,6 @@
 # Connecting to MongoDB Atlas in Python
 
+--tba
 
 ## Analyzing the Connection String
 
@@ -16,8 +17,4 @@ mycluster0-shard-00-00-wpeiv.mongodb.net:27017,mycluster0-shard-00-01-wpeiv.mong
 pertain to the seed list. To note, the are multiple addresses separated by commas. This to ensure that when the **primary** \(which is the first\) fails, the driver will automatically use the other cluster addresses. It can be considered as a replicated alternate database synced in the background. When transacting with Robo3T \(as mentioned in the previous chapter\), the addresses other than the primary only allow read only access.
 
 After the seed list is `/admin` This is the name of the current database which is set to admin. This can be changed when using a different database. Other important information is `Mycluster0-shard-0` which as mentioned earlier, pertains to the name of the cluster.
-
-
-
-
 
