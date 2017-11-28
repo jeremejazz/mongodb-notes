@@ -2,7 +2,19 @@
 
 To connect to our MongoDB Atlas database, you will need to get the connection string for the cluster. Similar to connecting via Compass, you need to click connect and then choose Connect App. There you will find the connection string needed for our code.
 
+Use the following code to connect to our cloud database by replacing the connection string from what we got from MongoDB Atlas.
 
+```py
+import pymongo
+from pymongo import MongoClient
+
+
+client = MongoClient("<CONNECTION_STRING>")
+
+print(client.mflix)
+```
+
+If there is no error and the database instance is displayed instead, it means that you have successfully connected to MongoDB Atlas
 
 ## Analyzing the Connection String
 
