@@ -1,6 +1,6 @@
 # Viewing data from your Local Machine
 
-Perhaps the best tool used in order to view our database in the cloud is by using MongoDB Compass. This free tool can be Downloaded here \([https://www.mongodb.com/products/compass\](https://www.mongodb.com/products/compass%29\)
+Perhaps the best tool used in order to view our database in the cloud is by using MongoDB Compass. This free tool can be Downloaded here \([https://www.mongodb.com/products/compass](https://www.mongodb.com/products/compass)\)
 
 ## Connecting via Robo3T
 
@@ -15,5 +15,4 @@ Here are the steps made:
 5. Choose Save then Connect. If an error occurs that says about establishing connection try another URL from the seed list.  
 
 Keep in mind that the first address in the seed list \(usually has a shard-00-00-.. \) pertains to the Primary node, that allows read/write access. While the other are like alternative link but only give Read access. Unlike compass you can only put one node for now.
-
 

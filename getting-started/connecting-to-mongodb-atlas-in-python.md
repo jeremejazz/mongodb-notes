@@ -1,6 +1,8 @@
 # Connecting to MongoDB Atlas in Python
 
---tba
+To connect to our MongoDB Atlas database, you will need to get the connection string for the cluster. Similar to connecting via Compass, you need to click connect and then choose Connect App. There you will find the connection string needed for our code.
+
+
 
 ## Analyzing the Connection String
 
