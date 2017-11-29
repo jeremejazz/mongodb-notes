@@ -1,10 +1,13 @@
 # MongoDB Concepts
 
-Why MongoDB
+Before we dive deep into MongoDB, let's first try to understand it's basic concepts such as what sets this apart from relational databases. 
 
-Document Oriented Data
+Chapter Contents
 
-Embed or reference?
+* [Why MongoDB](//why-mongodb.md)
+* Document Oriented Data
+* Embed or reference?
+* Performance
 
-Performance
+
 
